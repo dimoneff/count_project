@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Show count</title>
+</head>
+<body>
+    <h1>You wrote: </h1>
+    <p> {{ text }} </p>
+    <p> the text contains {{ words }} words </p>
+    <p> {{ fulldictionary }} </p>
+    <p>
+        {% for word, number in fulldictionary %}
+        {{ word  }} --> {{ number }} <br>
+        {% endfor %}
+    </p>
+    <a href="{% url 'about' %}">Go to the page about the company</a>
+
+
+
+</body>
+</html>

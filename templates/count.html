@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Count Page</title>
+</head>
+<body>
+    <h1>Welcome to the Count Page!!!</h1>
+
+    <form action="{% url 'show' %}" method="post">
+        {% csrf_token %}
+        <textarea cols="40" rows="5" name="text"></textarea><br>
+        <input type="submit" value="Count!">
+    </form>
+
+</body>
+</html>
